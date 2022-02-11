@@ -4,6 +4,15 @@
     margin: 0;
 } */
 
+/* Sintaxe para usar font dentro do projeto */
+@font-face{
+    font-family: Pepper;
+    src:url(../font/Pepper_Sauce.ttf);
+}
+div.logo{
+    font-family:Pepper;
+}
+
 header {
     background-color: black;
 }
@@ -56,6 +65,8 @@ body {
     margin: 0;
 
 }
+
+
 
 
 /* color: rgb(3, 5, 46);
