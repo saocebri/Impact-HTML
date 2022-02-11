@@ -1,21 +1,26 @@
-body {
-    color: rgb(3, 5, 46);
-    background: rgb(135,189,134,1);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    /* font-family: 'Shizuru', cursive; */
-    
+/* usado para todos os elementos da pagina */
+*{
+    box-sizing: border-box ;
+    margin: 0;
 }
 
+header{
+    background-color:rgb(0,0,0,0.291);   
+}
+
+.container{
+    background-color: rgb(214,40,40);
+}
+
+body {
 
 
-
-
-
-
-
-
-
-
+    /* color: rgb(3, 5, 46);
+    background: rgb(135,189,134,1);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Shizuru', cursive; */
+    
+}
 /* header a{
     color:white;
 }
