@@ -1,0 +1,50 @@
+body {
+    color: rgb(3, 5, 46);
+    background: rgb(135,189,134,1);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Shizuru', cursive; */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* header a{
+    color:white;
+}
+header a:visited{
+    color:blue;
+}
+
+header hover{
+    color:blue;
+}
+header a:active{
+    color:pink;
+} */
+
+
+
+/* h1 {
+    color: white;    
+}
+
+.carros{
+    color:brown
+} */
+
+/* Sintaxe para usar algo identificado ou seja especifico*/
+/* #sonho-realidade{
+    color: aqua;
+}
+
+p{
+    color:blueviolet !important;
+} */

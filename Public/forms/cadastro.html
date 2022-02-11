@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Impacta Car | Cadastro</title>
+</head>
+
+<body>
+    <section>
+        <h2>Formulário de Cadastro</h2>
+        <form action="doc-backend.php" method="post">
+            <fieldset>
+                <!-- Cria borda para unir o formulário-->
+                <legend>Login</legend>
+                <div>
+                    <!-- Sintaxe "required serve para informar que não pode ficar em branco o campo"-->
+                    <div><label for="email">Email:</label></div>
+                    <div><input required type="email" name="email" id="email"></div>
+                </div>
+                <div>
+                    <div><label for="senha">Senha:</label></div>
+                    <div><input type="password" name="senha" id="senha"></div>
+                </div>
+                <div>
+                    <div><label for="confirmar-senha">Confirmar Senha:</label></div>
+                    <div><input type="password" name="confirmar-senha" id="confirmar-senha"></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados do Usuário</legend>
+                <div>
+                    <div><label for="nome">Nome:</label></div>
+                    <div><input type="text" name="nome" id="nome"></div>
+                </div>
+                <div>
+                    <div><label for="idade">Idade:</label></div>
+                    <div><input type="number" name="idade" id="idade"></div>
+                </div>
+                <div>
+                    <div><label for="endereco">Endereço:</label></div>
+                    <div><input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço"></div>
+                </div>
+                <div>
+                    <div>Estado Civil:</div>
+                    <div>
+                        <label for="casado">Casado:</label>
+                        <input type="radio" id="casado" name="estado_civil" value="casado">
+                    </div>
+                    <div>
+                        <label for="solteiro">Solteiro:</label>
+                        <input type="radio" id="solteiro" name="estado_civil" value="solteiro">
+                    </div>
+
+                    <div>Cursos:</div>
+                    <div>
+                        <input type="checkbox" id="mecanico" name="mecanico" value="mecanico">
+                        <label for="mecanico">Mecanico</label>
+
+                    </div>
+                    <div>
+                        <input checked type="checkbox" id="engenheiro_eletrico" name="engenheiro_eletrico"
+                            value="engenheiro_eletrico">
+                        <label for="engenheiro_eletrico">Engenheiro</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div><label for="estado">Estado</label></div>
+                    <div>
+                        <select id="estado" name="estado">
+                            <option value="">-- Selecione --</option>
+                            <option value="SP" selected>São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div><label for="comentario">Comentário</label></div>
+                    <div>
+                        <textarea placeholder="Limite de 50 caracteres" maxlength="50" name="comentario" id="comentario"
+                            cols="50" rows="5"></textarea>
+                        <div>Limite de 50 caracteres</div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--Sintaxe que cria opção do usuario selecionar cor-->
+                    <input type="color" name="cor-veiculo">
+                </div>
+            </fieldset>
+
+            <input type="submit" value="enviar" ">
+        </form>
+
+    </section>
+
+</body>
+
+</html>
