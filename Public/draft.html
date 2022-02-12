@@ -19,19 +19,19 @@
             background-color: rgb(1, 32, 32);
             /* overflow: hidden; */
             /* Sintaxe coloca os cards uma do lado da outra */
-            display:flex;
+            display: flex;
             /* justify-content: space-evenly; */
+            height: 400px;
+            flex-direction: row-reverse;
 
         }
-        .container > div{
+
+        .container>div {
             width: 100px;
             background-color: rgb(66, 66, 99);
             height: 100px;
             margin: 10px;
-            
-            
 
-            
         }
     </style>
 </head>
@@ -39,9 +39,10 @@
 <body>
     <div class="container">
         <div>1</div>
-        <div>2</div>
+        <div style="height: 80px;">2</div>
         <div>3</div>
         <div>4</div>
+        <div>5</div>
         <div>6</div>
         <div>7</div>
         <div>8</div>
