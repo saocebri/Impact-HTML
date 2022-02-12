@@ -1,74 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Sintaxe para usar font dentro do projeto */
+@font-face {
+    font-family: Pepper;
+    src: url(../font/Pepper_Sauce.ttf);
+}
+
+div.logo {
+    font-family: Pepper;
+    font-size: 30px;
+    padding:30px;
+    color:blue;
+    text-shadow: 1px 1px 10px black;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.171);
+    box-shadow: 0 2px 2px 3px;
+    /* position: fixed;
+    width:100%; */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    /* width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center; */
+}
+
+
+ul {
+    list-style-type: none;
+
+}
+
+ul li {
+    display: inline-block;
+    /* background-color: rgb(121, 128, 158); */
+    border-radius: 0px;
+
+}
+
+ul li a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    /* border-bottom: solid 2px rgb(10, 10, 10); */
+
+}
+
+ul li a:hover {
+    /* background-color: rgb(3, 3, 46); */
+    /* border-radius: 5px; */
+    color:white;
+    border-bottom: solid 2px rgb(22, 1, 1);
+}
+
+
+/* body {
+    margin: 0;
+
+} */
+
 /* usado para todos os elementos da pagina */
 /* * {
     box-sizing: border-box;
     margin: 0;
 } */
 
-/* Sintaxe para usar font dentro do projeto */
-@font-face{
-    font-family: Pepper;
-    src:url(../font/Pepper_Sauce.ttf);
-}
-div.logo{
-    font-family:Pepper;
-}
 
-header {
-    background-color: black;
-}
-
-.container {
-    background-color: rgb(255, 0, 0);
-    /* margin-top: 20px; 
+/* margin-top: 20px; 
     margin-right: 80px;
     margin-bottom: 200px;
     margin-left: 60px;    
      */
-    /* A sequencia usa a sequencia igual relogio top, right, bottom e left */
-    /* margin:50px 80px 200px 60px */
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    display: inline-block;
-    background-color: aqua;
-    border-radius: 5px;
-
-}
-
-ul li a {
-    display: block;
-    padding: 10px;
-}
-
-ul li a:hover {
-    background-color: rgb(3, 3, 46);
-    border-radius: 5px;
-    color: rgb(190, 190, 177)
-}
+/* A sequencia usa a sequencia igual relogio top, right, bottom e left */
+/* margin:50px 80px 200px 60px */
 
 /* .logo {
     background-color: rgb(228, 25, 136);
     margin-top: 20px;
     margin-top: 30px;
 } */
-
-body {
-    margin: 0;
-
-}
-
-
-
-
 /* color: rgb(3, 5, 46);
     background: rgb(135,189,134,1);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
