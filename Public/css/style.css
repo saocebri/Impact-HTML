@@ -18,6 +18,7 @@ div.logo {
     text-shadow: 1px 1px 1px rgb(0, 0, 0), 2px -2px 2px red;
     font-size: 30px;
 }
+
 .title {
     color: #2b3d59;
 }
@@ -74,33 +75,51 @@ ul li a:hover {
 
 /* Formatação da TAG Main */
 
-main{
-/* display:none; */
-background-image: url(../img/paris.jpg);
-background-size: cover;
-padding: 50px;
-text-align: center;
-color: #fff;
-position:relative;
+main {
+    /* display:none; */
+    background-image: url(../img/paris.jpg);
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    position: relative;
 }
-.transparent{
+
+.transparent {
+    width:150px;
+    opacity: 1.0;    
+    border:red solid 2px;
+    margin:0 auto;
+    color:black;
+    /* max-height: auto;
+    overflow: auto;
+    transform: rotate(20deg); */
+    transform: rotate(0deg);
+    transition-property: width color;
+    transition-duration: 300ms;
+    transition-delay: 0s;
+
+
     /* background:linear-gradient(rgba(0, 0, 141, 0), rgb(0,0,0), rgb(233, 7, 7)); */
-    opacity: 1.0;
-    background:rgb(255, 0, 0);
+    /* background:rgb(255, 0, 0);
     position:absolute;
     right:40px;
     bottom:0;
-    z-index: 1;
+    z-index: 1; */
+}
+.transparent:hover{
+    width: 300px;
+    color: rgb(255, 255, 255);
+    transform: rotate(180deg);
 }
 
-.position{
-    background:rgb(0, 0, 0);
-    width: 100px;
-    height: 100px;
-    position:absolute;
-    bottom:0;
-    right: 40px;
-    z-index: 2;
+.position {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    /* z-index: 2; */
 }
 
 /* body {
