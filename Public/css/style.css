@@ -28,6 +28,7 @@ header {
     box-shadow: 0 2px 3px;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .container {
@@ -138,6 +139,28 @@ main {
     display: block;
 }
 
+/* Animação na imagem do cogumelo */
+
+.melo{
+    position:fixed;
+    top:0;
+    left:100px;
+    animation:animacao;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes animacao{
+    from{
+        top:0;
+        left:100px;
+    }
+    to{
+        top:0;
+        left: 500px;
+    }
+
+}
 /* body {
     margin: 0;
 
