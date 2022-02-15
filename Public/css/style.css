@@ -114,19 +114,28 @@ main {
 }
 
 .position {
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
     position: absolute;
     top: 0;
     bottom: 0;  
+    width: 150px;
     /* z-index: 2; */
 }
 
 .menu2{
     background-color:aqua;
     display:block;
+    
 }
 .sub-menu{
     background-color:rgb(5, 22, 2);
+    display:none;
+}
+.sub-menu:hover{
+    display: block;
+}
+.menu2:hover ~ .sub-menu{
+    display: block;
 }
 
 /* body {
