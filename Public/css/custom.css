@@ -31,3 +31,75 @@ header div.bar {
     justify-content: space-between;
     background-color: rgba(6, 6, 100, 0.637);
 }
+
+/* CSS do Card */
+
+.servicos .card{
+    border:#999 solid 1px;
+    border-radius: 3px;
+    background-color: rgb(199,199,199);
+    width:200px;
+}
+.btn{
+    cursor: pointer;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+/* Calculo para divisão de colunas no site 100%/12 = 8.33% *2 =16.66% */
+
+@media screen and(min-width:576px){
+    .col-small-1 { width: 8.33%;}
+    .col-small-2 { width: 16.66%;}
+    .col-small-3 { width: 25%;}
+    .col-small-4 { width: 33.33%;}
+    .col-small-5 { width: 41.66%;}
+    .col-small-6 { width: 50%;}
+    .col-small-7 { width: 58.33%;}
+    .col-small-8 { width: 66.66%;}
+    .col-small-9 { width: 75%;}
+    .col-small-10 { width: 83.33%;}
+    .col-small-11 {width: 91.66%;}
+    .col-small-12 {width: 100%;}
+}
+
+/* .btn {
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Courier New;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 12px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ } */
