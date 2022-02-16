@@ -1,0 +1,12 @@
+html{
+    margin:0;
+    box-sizing: 0;;
+}
+nav .menu{
+    display: flex
+}
+
+nav ul{
+    list-style-type: none;
+}
+
