@@ -1,0 +1,65 @@
+html{
+    font-size:25px;    
+}
+/* Mobile first */
+.container{
+    background-color: bisque;
+    width: 100%;  
+}
+.container ul{
+    display: block;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (min-width:992px){
+       .container ul{
+        display: flex;
+    }
+    .container{
+        background-color:rgb(47, 61, 255);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    /* background-color:azure;
+    width: 500px;
+    margin-left:0; */
+}
+h1{
+    /* Siginifica que é 50% do elemento pai */
+    /* width:50%;
+    background-color: aquamarine; */
+    /* Esse tipo de "vw e vh" usa como referencia o tamanho do dispositvo e pode ser usado em qualquer situação*/
+    /* font-size: 10vw; */
+    /* font-size: 10vh; */
+} 
+
+p {
+    /* font-size: 30px; */
+}
+
+span {
+    /* font-weight: bold;     */
+    /* a unidade de medida "0.5em"  do font-size, seria o dobro do tamanho em relação ao pai que 
+    é a "p", neste caso a medida fica 15px */
+    /* font-size: 0.5em; */
+    /* Busca como referencia medida do pai de todos quando não definido um pai*/
+    /* font-size: 0.5rem;*/
+}
