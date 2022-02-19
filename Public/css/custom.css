@@ -181,6 +181,32 @@ main .main {
     font-feature-settings: 'liga';
 }
 
+video{
+    width:100%;
+    height:auto;
+}
+.icon-seta{
+    position: relative;
+    
+}
+
+.icon-seta::after {
+font-family: 'Material Icons';
+content:"\e5c8";
+color:rgb(12, 12, 240);
+font-size: 20px;
+position:absolute;
+right:180px;
+}
+.icon-seta:hover::after{
+    color: red;
+    right:90px;
+}
+.icon-seta a{
+    text-decoration: none;
+    color:blue;
+
+}
 /* .btn {
     background: #3D94F6;
     background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
