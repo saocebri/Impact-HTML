@@ -13,7 +13,7 @@ object
 let nome = "10" * 10; // O java consegue converter um string(numeros) em variavel tipo numero
 let numero = 10;
 let boolean = true;
-let divisao = 10 / 2;
+let divisao = (10 / 2);
 
 const COLOR_RED = "#ff0000"; // Declaração de variavel constante (nunca muda)
 
