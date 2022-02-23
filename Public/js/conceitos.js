@@ -91,21 +91,40 @@ let semestre1 = [10, 5, 3, 8, 1, 9, 4];
 let semestre2 = [10, 5, 3, 8, 1, 9, 4];
 let faltas2 = 0;
 
-for (let i = 0; i < alunos3.length; i++)
- {
+for (let i = 0; i < alunos3.length; i++) {
     let mediaSemestre = (semestre1[i] + semestre2[i]) / 2;
     let mensagem;
     let nomeDoAluno = alunos3[i];
-    if (mediaSemestre >= 7 && faltas2 === 0)
-     {
-        mensagem = "Olá ${nomeDoAluno} sua media é:  ${mediaSemestre} voce está Aprovado";
-    } 
-    else
-     {
-        mensagem = 'Olá ${nomeDoAluno} sua media é:  ${mediaSemestre} voce está  Reprovado';
+    if (mediaSemestre >= 7 && faltas2 === 0) {
+        mensagem = `Olá ${nomeDoAluno} sua media é:  ${mediaSemestre} voce está Aprovado`;
+    }
+    else if (mediaSemestre > 3 && faltas2 === 0) {
+        mensagem = `Olá ${nomeDoAluno} sua media é:  ${mediaSemestre} voce está Recuperação`;
+    }
+
+    else {
+        mensagem = `Olá ${nomeDoAluno} sua media é:  ${mediaSemestre} voce está  Reprovado`;
     }
     console.log(mensagem);
 }
+
+console.log("----------Usando Switch Case-----------------------")
+
+switch (media) {
+    case (media >= 7):
+        console.log("Aprovado");
+        break;
+    case (media < 3):
+        console.log("Recuperação");
+        break;
+    default:
+        console.log("Reprovado");
+        break;
+}
+
+
+
+
 
 // console.log("tipo:", typeof nome, nome);
 // console.log("tipo:", typeof numero, numero);

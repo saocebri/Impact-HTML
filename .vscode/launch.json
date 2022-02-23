@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/Public/js/conceitos.js"
+            "program": "${workspaceFolder}/Public/js/funcoes.js"
         }
     ]
 }
