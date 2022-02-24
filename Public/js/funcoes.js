@@ -57,10 +57,10 @@ subtrai2(3);
 
 console.log("---------------Estrutura de objetos------------------------")
 
-let Pessoa ={
+let Pessoa = {
     nome: "Matheus",
     idade: 45,
-    mensagem: function(){
+    mensagem: function () {
         console.log("Olá Mundo");
     }
 }
@@ -68,21 +68,47 @@ let Pessoa ={
 //Transforma o objeto em json
 let json = JSON.stringify(Pessoa);
 console.log(json);
-let convert=JSON.parse(json);
+let convert = JSON.parse(json);
 
 
 let Usuario = {
     admin: true,
     login: "saocebri",
 
-    __proto__:Pessoa,
+    __proto__: Pessoa,
 }
 console.log(Usuario.idade);
 console.log(Usuario.mensagem());
 
-let lista=[1,2,3]
+let lista = [1, 2, 3]
 
 let j = lista.join(',');
 console.log(j);
 
- let x =1;
+// Callback
+
+function alerta(callback) {
+    callback();
+}
+
+let resposta = function () {
+    console.log("Olá você venceu");
+}
+resposta();
+alerta(resposta);
+
+// Callback de outra forma
+
+function alerta2(ola, mundo, msnola, msmundo = "Mundo") {
+    ola(msnola);
+    mundo(msmundo);
+}
+alerta2(msn => console.log(msn), msn => console.log(msn), "Olá");
+
+//Operador NEW / Construtor
+
+
+
+
+
+let x = 1;
