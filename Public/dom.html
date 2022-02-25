@@ -5,26 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom (Document Object Model)</title>
+    <style>
+        .active{
+            border:red solid 1px;
+        }
+        
+        ul{
+            list-style: none;
+        }
+        li{
+            border: black solid 1px;
+            padding:6px;
+            width:30%;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Method Fetch</h1>
+    <div class="pessoas"></div>
+    <br>
+    <hr>
     Conteudo do body
+    <h1 class="email"></h1>
     <ul class="ul-container">
-        <li class="l1">Conteudo li 1</li>
-        <li class="l2">Conteudo li 2</li>
+        <li class="l1"><img class="img" src="img/banana.svg" width="50"></li>
+        <li class="l2"><img src="img/bird.png" width="50"></li>
     </ul>
 
     <form>
         <div class="error"></div>
         <label for="nome"></label>
-        <input class="input-name" type="text" id="nome" name="nome">
+        <input class="input-name" type="text" id="nome" name="nome">  
+        <button class="busca-cep">Busca Cep</button>     
+        <textarea cols="50" rows="5" id="txt"></textarea>    
+        <div class="contar"></div>   
         <button class="btn">Clique aqui</button>
         
     </form>
 
 
     <!-- Codigo Java Scrip -->
-    <script type="text/javascript" async="async" src="js/dom.js"></script>
+    <script async="async" src="js/dom.js"></script>
 </body>
 
 </html>
