@@ -1,5 +1,20 @@
 "use strict"
 
+//usando promise
+
+let promise = new Promise((resolve, reject) => {
+    let login = 'carlos.gmail.com';
+    if (login.indexOf('@') == -1) {
+        return reject('Email-Invalido');
+    } else {
+        return resolve('Sucesso');
+    }
+});
+
+promise.then((data)=> console.log(`resultado positivo - ${data}`));
+promise.catch((data)=> console.log(`resultado negativo - ${data}`));
+
+
 //Method Fetch - Outro metodo de fazer uma requisição
 //Função Fetch é uma Promises
 let o = {}
