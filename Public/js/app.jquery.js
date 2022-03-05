@@ -29,7 +29,7 @@ $(document).ready(function () {
     // div.on('mouseout', function(){
     //     console.log("Ola vc tirou o mouse da div")
     // });
-    div.css('background-color', 'blue');
+    // div.css('background-color', 'blue');
 
     div.on({
         click: function () {
@@ -57,33 +57,103 @@ $(document).ready(function () {
     //     $("#apply-jquery").hide();
     // });
 
-    //exemplo 2
+    ///exemplo 2
 
     botaoShow.on({
         click: function () {
-            $("div").hide();
+            // $("div").fadeOut('slow'); // Cria efeito
+            $("div").slideUp('slow'); // Cria efeito  
             // $("div").toggle(); //Essa função já faz as duas coisas (hide e Show)
         }
     });
 
     let botaoHide = $("#botao-show");
+    //botaoHide.text("Novo texto") // escreve dentro do elemento botao
+    let textodoBotao = botaoHide.text() //Mostra o que está  escrito no botao
 
-    //Exemplo 1
+    ///Exemplo 1
 
     // botaoHide.click(function () {
-    //     $("#apply-jquery").show();
+    //     $("#apply-jquery").fadeOut();
     // });
 
     //Exemplo 2
 
     botaoHide.on({
-        click: function(){
+        click: function () {
             $('div').css('background-color', 'pink')
-            $("#apply-jquery").show();
+                //.fadeIn('slow') //Cria efeito
+                //.fadeToggle('slow') //Cria efeito
+                .slideDown('slow') //Cria efeito
+                .html('<strong>Novo texto</strong>');
         }
     });
 
+    // let botaoCalc = $('#botao-calc')
+    // let num1 = 2;
+    // let num2 = 3;
+    // botaoCalc.on({
+    //     click: function () {
+    //         let total = num1 + num2;
+    //         $("#apply-jquery").text(total);
+    //     }
+    // });
 
+    // let botao = $("button");
+
+    // botao.each(function(contador){       
+
+    //     if(contador===1){
+    //         $(this).css('background-color','blue');
+
+    //     }
+    // $(this).click(function(){
+    //     $('div').css('background-color', '#999')
+    // })
+
+    // });
+
+    //Calcular
+
+    let btn1 = $('.bot-01');
+    let btn2 = $('.bot-02');
+    let total = $('.resultado');
+    let soma = $('.soma');
+    let resultado = 0;
+
+    total.click(function () {
+        $(soma).text(resultado);
+    });
+
+    btn1.click(function () {
+        resultado += Number($(this).text());
+    });
+    btn2.click(function () {
+        resultado += Number($(this).text());
+    })
+
+    //Ajax 
+
+    // $("#ajax").click(function () {
+    //     $("#apply-jquery").load('teste-ajax.html');
+    // });
+ 
+    let btnEnviar = $('#enviar');
+
+    btnEnviar.click(function () {
+        let login = $('#login').val();
+        $.ajax({
+            method: "GET",
+            url: "teste-ajax.html",
+            data: { userLogin: login}
+        })
+            .done(function (msg) {
+                $("#apply-jquery").html(msg);
+            });
+    
+    })
+
+   
 
 
 
